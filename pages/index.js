@@ -20,8 +20,12 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
         <button onClick={(e) => auth.signinWithGithub()}>Sign In</button>
+        {auth?.user && (
+          <button onClick={() => auth.signout()}>Sign out</button>
+        )}
         <br />
         <div>Your user information: {auth?.user?.email}</div>
+        <br />
       </main>
 
       <footer className={styles.footer}>
