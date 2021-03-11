@@ -16,10 +16,12 @@ export default function Home() {
         <h1 className={styles.title}>Fast Feedback</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Current user:{' '}
+          <code>{auth.user ? JSON.stringify(auth.user) : 'None'}</code>
         </p>
-        <button onClick={(e) => auth.signinWithGithub()}>Sign In</button>
+
+        <button onClick={(e) => auth.signinWithGitHub()}>Sign In</button>
+
         {auth?.user && <button onClick={() => auth.signout()}>Sign out</button>}
         <br />
         <div>Your user information: {auth?.user?.email}</div>
