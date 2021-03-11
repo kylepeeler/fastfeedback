@@ -31,7 +31,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <img src="/vercel.svg" alt="Vercel Logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel Logo" height="30"   />
         </a>
       </footer>
 
@@ -119,6 +119,7 @@ const Home = () => {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
+
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -170,6 +171,7 @@ const Home = () => {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
+
         * {
           box-sizing: border-box;
         }
